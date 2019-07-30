@@ -1,0 +1,66 @@
+body {
+  font-size: 20px;
+  color: $background-color;
+  font-family: $font-family-lato;
+}
+
+p {
+  line-height: 1.5;
+  margin: 30px 0;
+}
+
+p a {
+  text-decoration: underline;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 800;
+  font-family: $font-family-open-sans;
+}
+
+a {
+  color: $background-color;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+a:focus, a:hover {
+  color: $a-link-color;
+}
+
+blockquote {
+  font-style: italic;
+  color: #868e96;
+}
+
+::-moz-selection {
+  color: #fff;
+  background: $background-color-second;
+  text-shadow: none;
+}
+
+::selection {
+  color: #fff;
+  background: $background-color-second;
+  text-shadow: none;
+}
+
+img::-moz-selection {
+  color: #fff;
+  background: transparent;
+}
+
+img::selection {
+  color: #fff;
+  background: transparent;
+}
+
+img::-moz-selection {
+  color: #fff;
+  background: transparent;
+}

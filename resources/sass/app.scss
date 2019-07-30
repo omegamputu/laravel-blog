@@ -1,0 +1,24 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800');
+
+// Variables
+@import 'variables';
+
+// Components
+@import "components/buttons";
+@import "components/section";
+@import "components/typography";
+@import "components/form";
+
+// Layout
+@import "layout/navbar";
+@import "layout/header";
+@import "layout/footer";
+
+// Pages
+@import "pages/post";
+
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
