@@ -1,16 +1,13 @@
 <template>
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-8">
-                <div class="card">
-                    <div class="card-header">Example Component</div>
+    <div>
+        <form method="post" action="{{ route('users.update', ['user' => $user]) }}">
+            {!! csrf_field() !!}
+            <input name="_method" type="hidden" value="PATCH">
 
-                    <div class="card-body">
-                        I'm an example component.
-                    </div>
-                </div>
-            </div>
-        </div>
+            <!-- Some form fields -->
+            
+            <button type="submit">{{ __('button.update') }}</button>
+        </form>
     </div>
 </template>
 
@@ -18,6 +15,20 @@
     export default {
         mounted() {
             console.log('Component mounted.')
-        }
+        },
+        props: {
+            csrfToken: {
+                type: String,
+                required: true,
+            },
+            user: {
+                type: Object,
+                required: true,
+            },
+            updateRoute: {
+                type: String,
+                required: true,
+            }
+        },
     }
 </script>
